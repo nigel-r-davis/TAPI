@@ -595,6 +595,9 @@ The structure of LTP supports all transport protocols including circuit and pack
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OjBOkEXPEeaB8vMnkFQLXQ" value="*"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_snvNYW2pEeqjr-4srHPKHw" name="_connectionExclusion" type="_IZ3vcEHbEeWqPKyD1j6LMg" association="_sntYMG2pEeqjr-4srHPKHw">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_sov78HgbEeqhQsSsGiMOkA" annotatedElement="_snvNYW2pEeqjr-4srHPKHw">
+            <body>Existing connections to be excluded from the route.</body>
+          </ownedComment>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sn9P0G2pEeqjr-4srHPKHw"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_soolQG2pEeqjr-4srHPKHw" value="*"/>
         </ownedAttribute>
