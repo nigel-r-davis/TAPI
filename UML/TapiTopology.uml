@@ -949,7 +949,7 @@ If the attribute is not present then the rule applies to all signals.</body>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hiqQQm9zEeq3NYg-TXSAxQ"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hiqQQ29zEeq3NYg-TXSAxQ" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_p21rgG_4Eeq3NYg-TXSAxQ" name="ComplexRule" isReadOnly="true">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_p21rgG_4Eeq3NYg-TXSAxQ" name="complexRule" isReadOnly="true">
           <ownedComment xmi:type="uml:Comment" xmi:id="_1uhEIG_4Eeq3NYg-TXSAxQ" annotatedElement="_p21rgG_4Eeq3NYg-TXSAxQ">
             <body>Allows for more complex rules where the basic rule system is not sufficient.</body>
           </ownedComment>
