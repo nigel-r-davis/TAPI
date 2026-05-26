@@ -564,6 +564,12 @@ License: This module is distributed under the Apache License 2.0</body>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_wubbwMQZEe6CUvtVY__nmQ" name="ConnAndPartAugmentsResiliencyTopoConstr" client="_PBW90MQREe6CUvtVY__nmQ">
         <supplier xmi:type="uml:Class" href="TapiPathComputation.uml#_-fei4P4wEea_VPdGG2-szQ"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_gCAYQFjoEfGJqtY2OSiGdg" name="ConnectionIsConnectionInAlternativeView" memberEnd="_gCECoFjoEfGJqtY2OSiGdg _gCVvcFjoEfGJqtY2OSiGdg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gCC0gFjoEfGJqtY2OSiGdg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gCDbkFjoEfGJqtY2OSiGdg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_gCVvcFjoEfGJqtY2OSiGdg" name="connection" type="_IZ3vcEHbEeWqPKyD1j6LMg" association="_gCAYQFjoEfGJqtY2OSiGdg"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_TQ0awC5zEea0_JngOlSKcA" name="Diagrams">
       <ownedComment xmi:type="uml:Comment" xmi:id="_yTCSsKmfEeu_24CNuQ9Jfw">
@@ -711,6 +717,14 @@ G.800: &quot;The links in a client layer network are supported by trails in a se
             <body>Provides the reference to the spec that defines the connection type and cepRoles.</body>
           </ownedComment>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vQxAMO7aEeuFG_ZjnWumpQ"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_gCECoFjoEfGJqtY2OSiGdg" name="_alternativeView" type="_IZ3vcEHbEeWqPKyD1j6LMg" isReadOnly="true" association="_gCAYQFjoEfGJqtY2OSiGdg">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_HZCzkFjqEfGJqtY2OSiGdg" annotatedElement="_gCECoFjoEfGJqtY2OSiGdg">
+            <body>A connection is a representation of enabled forwarding from a particular perspective, i.e., in a particular view.&#xD;
+It is possible that there is one or more alternative views of the same forwarding.  </body>
+          </ownedComment>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gCUhUFjoEfGJqtY2OSiGdg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gCVIYFjoEfGJqtY2OSiGdg" value="*"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_oC2ZEEG_EeWAMMFKXSVi-w" name="ConnectionEndPoint" visibility="public" isLeaf="true">
@@ -2463,4 +2477,8 @@ This can be used alone (with no spec reference) where there is only a paper spec
   </OpenModel_Profile:Specify>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_WrM_EEqPEe-lW9QGfBicug" base_Property="_WrLw8EqPEe-lW9QGfBicug"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_WrUT0EqPEe-lW9QGfBicug" base_StructuralFeature="_WrLw8EqPEe-lW9QGfBicug" partOfObjectKey="1"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_gCECoVjoEfGJqtY2OSiGdg" base_StructuralFeature="_gCECoFjoEfGJqtY2OSiGdg"/>
+  <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_gCT6QFjoEfGJqtY2OSiGdg" base_Property="_gCECoFjoEfGJqtY2OSiGdg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_gCWWgFjoEfGJqtY2OSiGdg" base_StructuralFeature="_gCVvcFjoEfGJqtY2OSiGdg"/>
+  <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_gCW9kFjoEfGJqtY2OSiGdg" base_Property="_gCVvcFjoEfGJqtY2OSiGdg"/>
 </xmi:XMI>
