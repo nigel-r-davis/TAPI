@@ -568,7 +568,34 @@ License: This module is distributed under the Apache License 2.0</body>
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gCC0gFjoEfGJqtY2OSiGdg" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gCDbkFjoEfGJqtY2OSiGdg" key="nature" value="UML_Nature"/>
         </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_gCVvcFjoEfGJqtY2OSiGdg" name="connection" type="_IZ3vcEHbEeWqPKyD1j6LMg" association="_gCAYQFjoEfGJqtY2OSiGdg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_gCVvcFjoEfGJqtY2OSiGdg" name="connection" type="_IZ3vcEHbEeWqPKyD1j6LMg" association="_gCAYQFjoEfGJqtY2OSiGdg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qv4o8Kt2EfGIB9RxyZyQSw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qxAqUKt2EfGIB9RxyZyQSw" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_bl8VsKtzEfGIB9RxyZyQSw" name="SwitchSelectsPath" memberEnd="_bmJKAKtzEfGIB9RxyZyQSw _bmaPwKtzEfGIB9RxyZyQSw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bmHU0KtzEfGIB9RxyZyQSw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bmHU0atzEfGIB9RxyZyQSw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_bmaPwKtzEfGIB9RxyZyQSw" name="switch" type="_jwuBoOryEeaeHOJw3lCT8A" association="_bl8VsKtzEfGIB9RxyZyQSw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UfS7wKt2EfGIB9RxyZyQSw" name="ConnectionEndPointIsConnectionEndPointInAlternativeView" memberEnd="_UfVYAqt2EfGIB9RxyZyQSw _UfizYKt2EfGIB9RxyZyQSw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UfVYAKt2EfGIB9RxyZyQSw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UfVYAat2EfGIB9RxyZyQSw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_UfizYKt2EfGIB9RxyZyQSw" name="connectionendpoint" type="_oC2ZEEG_EeWAMMFKXSVi-w" association="_UfS7wKt2EfGIB9RxyZyQSw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oNyfoKt2EfGIB9RxyZyQSw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oOfqQKt2EfGIB9RxyZyQSw" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Vx3W4Kt2EfGIB9RxyZyQSw" name="ConnectivityServiceIsConnectivityServiceInAlternativeView" memberEnd="_Vx4lAqt2EfGIB9RxyZyQSw _VyvgoKt2EfGIB9RxyZyQSw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Vx4lAKt2EfGIB9RxyZyQSw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Vx4lAat2EfGIB9RxyZyQSw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_VyvgoKt2EfGIB9RxyZyQSw" name="connectivityservice" type="_kuDzQEHaEeWqPKyD1j6LMg" association="_Vx3W4Kt2EfGIB9RxyZyQSw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ff8LEKt3EfGIB9RxyZyQSw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FglrUKt3EfGIB9RxyZyQSw" value="*"/>
+        </ownedEnd>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_TQ0awC5zEea0_JngOlSKcA" name="Diagrams">
@@ -718,10 +745,9 @@ G.800: &quot;The links in a client layer network are supported by trails in a se
           </ownedComment>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vQxAMO7aEeuFG_ZjnWumpQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_gCECoFjoEfGJqtY2OSiGdg" name="_alternativeView" type="_IZ3vcEHbEeWqPKyD1j6LMg" isReadOnly="true" association="_gCAYQFjoEfGJqtY2OSiGdg">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_gCECoFjoEfGJqtY2OSiGdg" name="_alternativeViewOf" type="_IZ3vcEHbEeWqPKyD1j6LMg" isReadOnly="true" association="_gCAYQFjoEfGJqtY2OSiGdg">
           <ownedComment xmi:type="uml:Comment" xmi:id="_HZCzkFjqEfGJqtY2OSiGdg" annotatedElement="_gCECoFjoEfGJqtY2OSiGdg">
-            <body>A connection is a representation of enabled forwarding from a particular perspective, i.e., in a particular view.&#xD;
-It is possible that there is one or more alternative views of the same forwarding.  </body>
+            <body>This connection is an alternative view of the resources represented by the referenced connection(s) where this alternative view is used for routing and control purposes. </body>
           </ownedComment>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gCUhUFjoEfGJqtY2OSiGdg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gCVIYFjoEfGJqtY2OSiGdg" value="*"/>
@@ -823,6 +849,13 @@ There may be many CEP role - Connection spec combinations for a particular CEP w
           <type xmi:type="uml:Class" href="TapiCommon.uml#_zLUKMGZ7EeyYs8rKMN_xPQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RwmAEXWTEeybLp763FkQ8Q"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RwmAEnWTEeybLp763FkQ8Q" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_UfVYAqt2EfGIB9RxyZyQSw" name="_alternativeViewOf" type="_oC2ZEEG_EeWAMMFKXSVi-w" isReadOnly="true" association="_UfS7wKt2EfGIB9RxyZyQSw">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_M-dIoLDpEfGhKeh7jgAc9A" annotatedElement="_UfVYAqt2EfGIB9RxyZyQSw">
+            <body>This CEP is an alternative view of the resources represented by the referenced CEP(s) where this alternative view is used for routing and control purposes.</body>
+          </ownedComment>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UfiMUKt2EfGIB9RxyZyQSw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UfiMUat2EfGIB9RxyZyQSw" value="*"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_DOEi4O-IEeWLlrwIF3w0vA" name="ConnectivityConstraint">
@@ -976,6 +1009,13 @@ The ConnectivityService is a container for connectivity request details and is d
           </ownedComment>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rJd44SNhEeuOI7jLVfF7jA"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rJef8CNhEeuOI7jLVfF7jA" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Vx4lAqt2EfGIB9RxyZyQSw" name="_alternativeViewOf" type="_kuDzQEHaEeWqPKyD1j6LMg" isReadOnly="true" association="_Vx3W4Kt2EfGIB9RxyZyQSw">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_JPDpQLDqEfGhKeh7jgAc9A" annotatedElement="_Vx4lAqt2EfGIB9RxyZyQSw">
+            <body>This connectivity service is an alternative view of the resources represented by the referenced connectivity service(s) where this alternative view is used for routing and control purposes.</body>
+          </ownedComment>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VyZiYKt2EfGIB9RxyZyQSw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VyoL4Kt2EfGIB9RxyZyQSw" value="*"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_MIWTIGh5EeWZEqTYAF8eqA" name="ConnectivityServiceEndPoint" isLeaf="true">
@@ -1192,6 +1232,14 @@ This ability allows multiple alternate routes to be present that otherwise would
             <body>Sink direction is intended from the unreliable to reliable CEPs. Source direction is the reverse.</body>
           </ownedComment>
           <type xmi:type="uml:Enumeration" href="TapiCommon.uml#_Ydx2sNnjEeWIOYiRCk5bbQ"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_bmJKAKtzEfGIB9RxyZyQSw" name="_selectedPath" isReadOnly="true" association="_bl8VsKtzEfGIB9RxyZyQSw">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_lvE74LDkEfGhKeh7jgAc9A" annotatedElement="_bmJKAKtzEfGIB9RxyZyQSw">
+            <body>The Path instance(s) which is (are) currently selected for traffic flow.</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="TapiPathComputation.uml#_aMQ88N5xEeWd9KDn6x5Skg"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bmZosKtzEfGIB9RxyZyQSw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bmZosatzEfGIB9RxyZyQSw" value="*"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_nuZ_MOryEeaeHOJw3lCT8A" name="SwitchControl">
@@ -2481,4 +2529,16 @@ This can be used alone (with no spec reference) where there is only a paper spec
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_gCT6QFjoEfGJqtY2OSiGdg" base_Property="_gCECoFjoEfGJqtY2OSiGdg"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_gCWWgFjoEfGJqtY2OSiGdg" base_StructuralFeature="_gCVvcFjoEfGJqtY2OSiGdg"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_gCW9kFjoEfGJqtY2OSiGdg" base_Property="_gCVvcFjoEfGJqtY2OSiGdg"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_bmJxEKtzEfGIB9RxyZyQSw" base_StructuralFeature="_bmJKAKtzEfGIB9RxyZyQSw"/>
+  <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_bmZBoKtzEfGIB9RxyZyQSw" base_Property="_bmJKAKtzEfGIB9RxyZyQSw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_bmaPwatzEfGIB9RxyZyQSw" base_StructuralFeature="_bmaPwKtzEfGIB9RxyZyQSw"/>
+  <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_bmaPwqtzEfGIB9RxyZyQSw" base_Property="_bmaPwKtzEfGIB9RxyZyQSw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_UfV_EKt2EfGIB9RxyZyQSw" base_StructuralFeature="_UfVYAqt2EfGIB9RxyZyQSw"/>
+  <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_Ufg-MKt2EfGIB9RxyZyQSw" base_Property="_UfVYAqt2EfGIB9RxyZyQSw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_UfizYat2EfGIB9RxyZyQSw" base_StructuralFeature="_UfizYKt2EfGIB9RxyZyQSw"/>
+  <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_UfizYqt2EfGIB9RxyZyQSw" base_Property="_UfizYKt2EfGIB9RxyZyQSw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Vx5MEKt2EfGIB9RxyZyQSw" base_StructuralFeature="_Vx4lAqt2EfGIB9RxyZyQSw"/>
+  <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_VyH1kKt2EfGIB9RxyZyQSw" base_Property="_Vx4lAqt2EfGIB9RxyZyQSw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Vyvgoat2EfGIB9RxyZyQSw" base_StructuralFeature="_VyvgoKt2EfGIB9RxyZyQSw"/>
+  <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_VywHsKt2EfGIB9RxyZyQSw" base_Property="_VyvgoKt2EfGIB9RxyZyQSw"/>
 </xmi:XMI>

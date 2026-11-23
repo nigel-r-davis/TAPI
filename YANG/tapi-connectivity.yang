@@ -416,6 +416,13 @@ module tapi-connectivity {
             config false;
             description "The server layer Connections supporting this Connection.";
         }
+        list alternative-view-of {
+            uses connection-ref;
+            key 'connection-uuid';
+            config false;
+            description "This connection is an alternative view of the resources represented by the referenced connection(s) where this alternative view is used for routing and control purposes.";
+        }
+
         list supported-client-link {
             uses tapi-topology:link-ref;
             key 'topology-uuid link-uuid';
@@ -500,6 +507,12 @@ module tapi-connectivity {
             key 'topology-uuid node-uuid node-edge-point-uuid connection-end-point-uuid';
             config false;
             description "A ConnectionEndPoint (CEP) instance may aggregate one or more other CEP instances for e.g. pooling purposes, when a set of CEP instances are equivalent for usage.";
+        }
+        list alternative-view-of {
+            uses connection-end-point-ref;
+            key 'topology-uuid node-uuid node-edge-point-uuid connection-end-point-uuid';
+            config false;
+            description "This CEP is an alternative view of the resources represented by the referenced CEP(s) where this alternative view is used for routing and control purposes.";
         }
         container parent-node-edge-point {
             uses tapi-topology:node-edge-point-ref;
@@ -621,6 +634,12 @@ module tapi-connectivity {
             key 'local-id';
             uses connectivity-service-internal-point;
             description "The ConnectivityServiceInternalPoint (CSIP) instances of the ConnectivityService.";
+        }
+        list alternative-view-of {
+            uses connectivity-service-ref;
+            key 'connectivity-service-uuid';
+            config false;
+            description "This connectivity service is an alternative view of the resources represented by the referenced connectivity service(s) where this alternative view is used for routing and control purposes.";
         }
         uses tapi-common:global-class;
         uses tapi-common:admin-state-pac;
@@ -751,6 +770,12 @@ module tapi-connectivity {
             key 'connection-uuid route-local-id';
             config false;
             description "The Route instance(s) which is (are) currently selected for traffic flow.";
+        }
+        list selected-path {
+            uses tapi-path-computation:path-ref;
+            key 'path-uuid';
+            config false;
+            description "The Path instance(s) which is (are) currently selected for traffic flow.";
         }
         leaf selection-reason {
             type selection-reason;
