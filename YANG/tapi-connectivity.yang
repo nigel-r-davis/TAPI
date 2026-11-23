@@ -858,7 +858,7 @@ module tapi-connectivity {
         leaf is-lock-out {
             type boolean;
             default "false";
-            description "The resource is configured to temporarily not be available for use in the protection/restoration scheme(s) it is part of.
+            description "This is deprecated. The resource is configured to temporarily not be available for use in the protection/restoration scheme(s) it is part of.
                 This overrides all other control states including e.g. 'forced'.
                 If the item is locked out then it cannot be used under any circumstances.
                 Note: Only relevant when part of a protection/restoration scheme.";

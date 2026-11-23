@@ -42,7 +42,7 @@ adapts that information, filters it for OAM information interfering with its own
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_2-15sEI6EeiDweqmZm-ZXQ" name="OamJob" isLeaf="true">
         <ownedComment xmi:type="uml:Comment" xmi:id="_6rCbgE6yEeuJitB6Y7blvQ" annotatedElement="_2-15sEI6EeiDweqmZm-ZXQ">
-          <body>This class allows the provisioning of performance monitoring functions on specified resources.</body>
+          <body>This is deprecated. This class allows the provisioning of performance monitoring functions on specified resources.</body>
         </ownedComment>
         <generalization xmi:type="uml:Generalization" xmi:id="_X_Zp0E4eEeiMYveOdt1-rQ">
           <general xmi:type="uml:Class" href="TapiCommon.uml#_xEvjkN8AEeW-BtRsuJPbqg"/>
@@ -249,7 +249,7 @@ An instance of this class includes its OamService, OamJob and Meg object instanc
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_04fNo04hEeiMYveOdt1-rQ" name="_oamJob" type="_2-15sEI6EeiDweqmZm-ZXQ" aggregation="composite" association="_04fNoE4hEeiMYveOdt1-rQ">
           <ownedComment xmi:type="uml:Comment" xmi:id="_Q9pjIFE-EeuuGuqbuHPIsg" annotatedElement="_04fNo04hEeiMYveOdt1-rQ">
-            <body>The included OamJob instances.</body>
+            <body>This is deprecated. The included OamJob instances.</body>
           </ownedComment>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_483CAE4hEeiMYveOdt1-rQ"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_483CAU4hEeiMYveOdt1-rQ" value="*"/>
@@ -364,7 +364,7 @@ If not specified (and neither CSEP is specified), the OamServicePoint (OSP) is i
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_vnyfgF0IEeipas1p-rFJBA" name="CurrentData">
         <ownedComment xmi:type="uml:Comment" xmi:id="_ElqBoE6fEeuJitB6Y7blvQ" annotatedElement="_vnyfgF0IEeipas1p-rFJBA">
-          <body>The CurrentData class. The PM metrics/types can be specified in technology specific augmentations of this class.&#xD;
+          <body>This is deprecated. The CurrentData class. The PM metrics/types can be specified in technology specific augmentations of this class.&#xD;
 ITU-T Q.822: This object contains the measurements for the resource being monitored for a specified time interval (measurement interval time / granularity period).</body>
         </ownedComment>
         <generalization xmi:type="uml:Generalization" xmi:id="_E-00wF6ZEeitO-Stqhyn1g">
@@ -472,7 +472,7 @@ The value is bound to the quarter of an hour in case of a 15 minute interval and
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_CD5qQIUxEeiYFOBVMQg1QQ" name="PmData">
         <ownedComment xmi:type="uml:Comment" xmi:id="_oCNbAE65EeuJitB6Y7blvQ" annotatedElement="_CD5qQIUxEeiYFOBVMQg1QQ">
-          <body>The PM threshold information associated to an OamProfile instance.&#xD;
+          <body>This is deprecated. The PM threshold information associated to an OamProfile instance.&#xD;
 It defines a set of PM metrics, their threshold values, the granularity period or measurement interval time for these PM metrics, the stateful or stateless types of related threshold crossing alert (TCA) reporting.</body>
         </ownedComment>
         <generalization xmi:type="uml:Generalization" xmi:id="_Wuza8IVQEeiYFOBVMQg1QQ">
@@ -1605,7 +1605,7 @@ In Dual-Ended measurements (and in case of TX counters), it is assumed that the 
         </ownedLiteral>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_6qN-N1ofEemu443YKSGnxQ" name="OAM_JOB">
           <ownedComment xmi:type="uml:Comment" xmi:id="_ENwrgFG_EeuuGuqbuHPIsg" annotatedElement="_6qN-N1ofEemu443YKSGnxQ">
-            <body>The OamJob class.</body>
+            <body>This is deprecated. The OamJob class.</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_BmNQIFoxEemu443YKSGnxQ" name="OAM_PROFILE">
@@ -1615,7 +1615,7 @@ In Dual-Ended measurements (and in case of TX counters), it is assumed that the 
         </ownedLiteral>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_RCBd4FoxEemu443YKSGnxQ" name="CURRENT_DATA">
           <ownedComment xmi:type="uml:Comment" xmi:id="_dy-LIFG_EeuuGuqbuHPIsg" annotatedElement="_RCBd4FoxEemu443YKSGnxQ">
-            <body>The CurrentData class.</body>
+            <body>This is deprecated. The CurrentData class.</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SDVw8FoxEemu443YKSGnxQ" name="HISTORY_DATA">
@@ -1625,7 +1625,7 @@ In Dual-Ended measurements (and in case of TX counters), it is assumed that the 
         </ownedLiteral>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_uwiuUO-mEeuFG_ZjnWumpQ" name="PM_DATA">
           <ownedComment xmi:type="uml:Comment" xmi:id="_uwiuUe-mEeuFG_ZjnWumpQ" annotatedElement="_uwiuUO-mEeuFG_ZjnWumpQ">
-            <body>The PmThresholdData class.</body>
+            <body>This is deprecated. The PmThresholdData class.</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_F7AZQGXKEe62arN6JN6vgw" name="OAM_JOB_SERVICE"/>

@@ -724,7 +724,7 @@ module tapi-oam {
         }
         uses tapi-common:global-class;
         uses tapi-common:admin-state-pac;
-        description "This class allows the provisioning of performance monitoring functions on specified resources.";
+        description "This is deprecated. This class allows the provisioning of performance monitoring functions on specified resources.";
     }
     grouping meg {
         list mep {
@@ -814,7 +814,7 @@ module tapi-oam {
         list oam-job {
             key 'uuid';
             uses oam-job;
-            description "The included OamJob instances.";
+            description "This is deprecated. The included OamJob instances.";
         }
         list mep-pm-data {
             key 'uuid';
@@ -944,7 +944,7 @@ module tapi-oam {
                 In case of <15min, the number of HistoryData instances shall be able to cover a span of 4 hours.";
         }
         uses tapi-common:local-class;
-        description "The CurrentData class. The PM metrics/types can be specified in technology specific augmentations of this class.
+        description "This is deprecated. The CurrentData class. The PM metrics/types can be specified in technology specific augmentations of this class.
             ITU-T Q.822: This object contains the measurements for the resource being monitored for a specified time interval (measurement interval time / granularity period).";
     }
     grouping history-data {
@@ -1014,7 +1014,7 @@ module tapi-oam {
             description "The PM metrics and their threshold values.";
         }
         uses tapi-common:local-class;
-        description "The PM threshold information associated to an OamProfile instance.
+        description "This is deprecated. The PM threshold information associated to an OamProfile instance.
             It defines a set of PM metrics, their threshold values, the granularity period or measurement interval time for these PM metrics, the stateful or stateless types of related threshold crossing alert (TCA) reporting.";
     }
     grouping pm-data-pac {
@@ -1309,7 +1309,7 @@ module tapi-oam {
     }
     identity OAM_OBJECT_TYPE_OAM_JOB {
         base OAM_OBJECT_TYPE;
-        description "The OamJob class.";
+        description "This is deprecated. The OamJob class.";
     }
     identity OAM_OBJECT_TYPE_OAM_PROFILE {
         base OAM_OBJECT_TYPE;
@@ -1317,7 +1317,7 @@ module tapi-oam {
     }
     identity OAM_OBJECT_TYPE_CURRENT_DATA {
         base OAM_OBJECT_TYPE;
-        description "The CurrentData class.";
+        description "This is deprecated. The CurrentData class.";
     }
     identity OAM_OBJECT_TYPE_HISTORY_DATA {
         base OAM_OBJECT_TYPE;
@@ -1325,7 +1325,7 @@ module tapi-oam {
     }
     identity OAM_OBJECT_TYPE_PM_DATA {
         base OAM_OBJECT_TYPE;
-        description "The PmThresholdData class.";
+        description "This is deprecated. The PmThresholdData class.";
     }
     identity OAM_OBJECT_TYPE_OAM_JOB_SERVICE {
         base OAM_OBJECT_TYPE;

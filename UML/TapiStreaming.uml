@@ -141,7 +141,7 @@ This property can be used to convey this.</body>
         </ownedComment>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_EIvqcMEgEemNuM6W9x-XhQ" name="WHOLE_ENTITY_ON_CHANGE">
           <ownedComment xmi:type="uml:Comment" xmi:id="_s9MpUDFLEeqnIZ7QO22DGQ" annotatedElement="_EIvqcMEgEemNuM6W9x-XhQ">
-            <body>DEPRECATED Replaced by WHOLE_ENTITY with record trigger ON_CHANGE.&#xD;
+            <body>This is deprecated. DEPRECATED Replaced by WHOLE_ENTITY with record trigger ON_CHANGE.&#xD;
 A record provides a snapshot of a whole entity and a snapshot is taken on each change.&#xD;
 The record includes all properties and values whether they have changed or not.</body>
           </ownedComment>
@@ -154,7 +154,7 @@ E.g., the log only includes the attribute that has changed and not other attribu
         </ownedLiteral>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SoJTQMEgEemNuM6W9x-XhQ" name="WHOLE_ENTITY_PERIODIC">
           <ownedComment xmi:type="uml:Comment" xmi:id="_C2Wt8DFMEeqnIZ7QO22DGQ" annotatedElement="_SoJTQMEgEemNuM6W9x-XhQ">
-            <body>DEPRECATED Replaced by WHOLE_ENTITY with record trigger PERIODIC.&#xD;
+            <body>This is deprecated. DEPRECATED Replaced by WHOLE_ENTITY with record trigger PERIODIC.&#xD;
 A snapshot of an entity is recorded periodically regardless of whether there has been change or not.</body>
           </ownedComment>
         </ownedLiteral>
@@ -628,7 +628,7 @@ CONDITION: Mandatory where not default.</body>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_B0Zw4B-1EeqCeNa5GcKdyg" name="AlarmConditionDetectorDetail">
         <ownedComment xmi:type="uml:Comment" xmi:id="_KOV4YDwyEeqNzoiCK4mkvg" annotatedElement="_B0Zw4B-1EeqCeNa5GcKdyg">
-          <body>A record of the state of a detector where that detector has two underling states that are of asymmetric importance.</body>
+          <body>This is deprecated. A record of the state of a detector where that detector has two underling states that are of asymmetric importance.</body>
         </ownedComment>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_GTLo4G32EemRDKXaAompzQ" name="alarmDetectorState" type="_PbhtcG32EemRDKXaAompzQ" isReadOnly="true">
           <ownedComment xmi:type="uml:Comment" xmi:id="_Ua1B4DwvEeqNzoiCK4mkvg" annotatedElement="_GTLo4G32EemRDKXaAompzQ">

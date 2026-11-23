@@ -256,7 +256,7 @@ An instance of this class includes its NotificationSubscriptionService, (legacy)
     <packagedElement xmi:type="uml:Package" xmi:id="_hQef8Lx_Eeu-rZe49IID5Q" name="Notifications">
       <packagedElement xmi:type="uml:Signal" xmi:id="_7CEIsC1qEeair-8ZDvf8jw" name="Notification">
         <ownedComment xmi:type="uml:Comment" xmi:id="_wlOjsE9jEeuuGuqbuHPIsg" annotatedElement="_7CEIsC1qEeair-8ZDvf8jw">
-          <body>The Notification signal.&#xD;
+          <body>This is deprecated. The Notification signal.&#xD;
 OMG UML(R) Version 2.5.1: &quot;A Signal is a specification of a kind of communication between objects in which a reaction is asynchronously triggered in the receiver without a reply.&#xD;&#xD;
 The data carried by the communication are represented as attributes of the Signal.&quot;</body>
         </ownedComment>

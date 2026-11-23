@@ -188,7 +188,7 @@ module tapi-fm {
                 For Environment Alarm Category, e.g. on the same Device instance may appear more Environmental alarm notifications with same Alarn Name.
                 For Connectivity Alarm Category in case that same CEP instance includes e.g. both OTS and OMS monitoring layers.";
         }
-        description "This class augments the Notification class with alarm related parameters.
+        description "This is deprecated. This class augments the Notification class with alarm related parameters.
             This class is deprecated in favor of DetectedCondition class, which unifies alarm and TCA related parameters.";
     }
     grouping tca-info {
@@ -250,7 +250,7 @@ module tapi-fm {
             config false;
             description "The TCA category, based on ITU-T X.733.";
         }
-        description "This class augments the Notification class with threshold crossing alert related parameters.
+        description "This is deprecated. This class augments the Notification class with threshold crossing alert related parameters.
             This class is deprecated in favor of DetectedCondition class, which unifies alarm and TCA related parameters.";
     }
     grouping detected-condition {
@@ -574,7 +574,7 @@ module tapi-fm {
                 description "ITU-T G.7710/X.733/M.3100: Indication for a potential or impending service-affecting fault. Further diagnosis should be made.";
             }
             enum CLEARED {
-                description "Included only for some possible backward compatibility purpose. It should not be used to assign a severity to a failure.
+                description "This is deprecated. Included only for some possible backward compatibility purpose. It should not be used to assign a severity to a failure.
                     ITU-T G.7710: The severities 'cleared' and 'indeterminate' defined by [ITU-T X.733] are not included in Table 2, as it is assumed that these are not to be used to assign a failure.";
             }
         }
@@ -599,7 +599,7 @@ module tapi-fm {
         type identityref {
             base PERCEIVED_TCA_SEVERITY;
         }
-        description "The types of perceived severity of threshold crossing alerts.";
+        description "This is deprecated. The types of perceived severity of threshold crossing alerts.";
     }
     typedef fm {
         type identityref {

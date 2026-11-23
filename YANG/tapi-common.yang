@@ -1158,7 +1158,7 @@ module tapi-common {
     typedef layer-protocol-name {
         type enumeration {
             enum ODU {
-                description "Models the ODU layer as per ITU-T G.872";
+                description "This is deprecated. Models the ODU layer as per ITU-T G.872";
             }
             enum ETH {
                 description "Models the ETH layer as per ITU-T G.8010";

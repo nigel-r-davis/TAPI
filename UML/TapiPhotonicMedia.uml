@@ -2437,7 +2437,11 @@ E.g. if grid type = FLEX then the adjustment granularity informs about the minim
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_01yZ83pKEei5LIrjJTgegQ" name="PULSE"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_ErlpwIoJEeivCevppATXng" name="PhotonicLayerQualifier">
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_a9CSkIoJEeivCevppATXng" name="OTSi"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_a9CSkIoJEeivCevppATXng" name="OTSi">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_AsmewOdKEfGYp-iztNhKaA" annotatedElement="_a9CSkIoJEeivCevppATXng">
+            <body>This is deprecated.</body>
+          </ownedComment>
+        </ownedLiteral>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_byLK0IoJEeivCevppATXng" name="OTSiA"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_eedK4IoJEeivCevppATXng" name="OTSiMC">
           <ownedComment xmi:type="uml:Comment" xmi:id="_CCDGcG71EequJuWZpC8-lA" annotatedElement="_eedK4IoJEeivCevppATXng">
@@ -2459,12 +2463,32 @@ E.g. if grid type = FLEX then the adjustment granularity informs about the minim
             <body>Media Channel Assembly: the set of one or more MCs supporting one (or more) OTSiA(s).</body>
           </ownedComment>
         </ownedLiteral>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Fug_AIoMEeivCevppATXng" name="OMSA"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_GbrnAIoMEeivCevppATXng" name="OTSA"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_J-ZiwFVSEemD67R2QwZykA" name="OCH"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Fug_AIoMEeivCevppATXng" name="OMSA">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_CYupYOdKEfGYp-iztNhKaA" annotatedElement="_Fug_AIoMEeivCevppATXng">
+            <body>This is deprecated.</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_GbrnAIoMEeivCevppATXng" name="OTSA">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_DvBG4OdKEfGYp-iztNhKaA" annotatedElement="_GbrnAIoMEeivCevppATXng">
+            <body>This is deprecated.</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_J-ZiwFVSEemD67R2QwZykA" name="OCH">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_FGZJgOdKEfGYp-iztNhKaA" annotatedElement="_J-ZiwFVSEemD67R2QwZykA">
+            <body>This is deprecated.</body>
+          </ownedComment>
+        </ownedLiteral>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_a0tHwG71EequJuWZpC8-lA" name="OMS"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_eIudQG71EequJuWZpC8-lA" name="OTS"/>
-        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_sZ1kcLREEeuCSuivI1LD1Q" name="OTS_OMS"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_eIudQG71EequJuWZpC8-lA" name="OTS">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_GbetIOdKEfGYp-iztNhKaA" annotatedElement="_eIudQG71EequJuWZpC8-lA">
+            <body>This is deprecated.</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_sZ1kcLREEeuCSuivI1LD1Q" name="OTS_OMS">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Hzyj4OdKEfGYp-iztNhKaA" annotatedElement="_sZ1kcLREEeuCSuivI1LD1Q">
+            <body>This is deprecated.</body>
+          </ownedComment>
+        </ownedLiteral>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SWP6gMbXEeyiW8qpLmKwtA" name="OTS_MEDIA"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_5GtLUDkFEe28x-wjv-aMjA" name="OS_MEDIA"/>
       </packagedElement>

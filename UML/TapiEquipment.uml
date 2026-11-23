@@ -900,7 +900,7 @@ CONDITION: Mandatory where the equipment has holders.</body>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_XOQ_AEQwEeasL6dcjI1vEA" name="geographicalLocation" isReadOnly="true">
           <ownedComment xmi:type="uml:Comment" xmi:id="_Ujc_AOvQEeyisriSvKT5Lw" annotatedElement="_XOQ_AEQwEeasL6dcjI1vEA">
-            <body>The location of the equipment in a georgraphical context (e.g., lat long).&#xD;
+            <body>This is deprecated. The location of the equipment in a georgraphical context (e.g., lat long).&#xD;
 This property is deprecated.&#xD;
 CONDITION: Mandatory where there is a relevant geographical location and formal geolocation is not being used (only for equipments not in holders).</body>
           </ownedComment>

@@ -2004,7 +2004,7 @@ module tapi-photonic-media {
     }
     identity PHOTONIC_LAYER_QUALIFIER_OTSi {
         base PHOTONIC_LAYER_QUALIFIER;
-        description "none";
+        description "This is deprecated.";
     }
     identity PHOTONIC_LAYER_QUALIFIER_OTSiA {
         base PHOTONIC_LAYER_QUALIFIER;
@@ -2028,15 +2028,15 @@ module tapi-photonic-media {
     }
     identity PHOTONIC_LAYER_QUALIFIER_OMSA {
         base PHOTONIC_LAYER_QUALIFIER;
-        description "none";
+        description "This is deprecated.";
     }
     identity PHOTONIC_LAYER_QUALIFIER_OTSA {
         base PHOTONIC_LAYER_QUALIFIER;
-        description "none";
+        description "This is deprecated.";
     }
     identity PHOTONIC_LAYER_QUALIFIER_OCH {
         base PHOTONIC_LAYER_QUALIFIER;
-        description "none";
+        description "This is deprecated.";
     }
     identity PHOTONIC_LAYER_QUALIFIER_OMS {
         base PHOTONIC_LAYER_QUALIFIER;
@@ -2044,11 +2044,11 @@ module tapi-photonic-media {
     }
     identity PHOTONIC_LAYER_QUALIFIER_OTS {
         base PHOTONIC_LAYER_QUALIFIER;
-        description "none";
+        description "This is deprecated.";
     }
     identity PHOTONIC_LAYER_QUALIFIER_OTS_OMS {
         base PHOTONIC_LAYER_QUALIFIER;
-        description "none";
+        description "This is deprecated.";
     }
     identity PHOTONIC_LAYER_QUALIFIER_OTS_MEDIA {
         base PHOTONIC_LAYER_QUALIFIER;

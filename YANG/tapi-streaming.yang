@@ -247,7 +247,7 @@ module tapi-streaming {
     }
     identity LOG_RECORD_STRATEGY_WHOLE_ENTITY_ON_CHANGE {
         base LOG_RECORD_STRATEGY;
-        description "DEPRECATED Replaced by WHOLE_ENTITY with record trigger ON_CHANGE.
+        description "This is deprecated. DEPRECATED Replaced by WHOLE_ENTITY with record trigger ON_CHANGE.
             A record provides a snapshot of a whole entity and a snapshot is taken on each change.
             The record includes all properties and values whether they have changed or not.";
     }
@@ -258,7 +258,7 @@ module tapi-streaming {
     }
     identity LOG_RECORD_STRATEGY_WHOLE_ENTITY_PERIODIC {
         base LOG_RECORD_STRATEGY;
-        description "DEPRECATED Replaced by WHOLE_ENTITY with record trigger PERIODIC.
+        description "This is deprecated. DEPRECATED Replaced by WHOLE_ENTITY with record trigger PERIODIC.
             A snapshot of an entity is recorded periodically regardless of whether there has been change or not.";
     }
     identity LOG_RECORD_STRATEGY_WHOLE_ENTITY {
@@ -792,7 +792,7 @@ module tapi-streaming {
                 On that basis, the schemes are supported but relegated to optional.
                 CONDITION: Mandatory where legacy properties are to be conveyed.";
         }
-        description "A record of the state of a detector where that detector has two underling states that are of asymmetric importance.";
+        description "This is deprecated. A record of the state of a detector where that detector has two underling states that are of asymmetric importance.";
     }
     grouping condition-detector {
         leaf condition-native-name {

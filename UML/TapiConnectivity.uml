@@ -1333,7 +1333,7 @@ Ref: G.808 Amendment 1 (03/2018)</body>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_kKvJ4PKiEeaAIfPpmDwI5Q" name="isLockOut">
           <ownedComment xmi:type="uml:Comment" xmi:id="_Mn3b0EDKEeezirADScVY4Q" annotatedElement="_kKvJ4PKiEeaAIfPpmDwI5Q">
-            <body>The resource is configured to temporarily not be available for use in the protection/restoration scheme(s) it is part of.&#xD;
+            <body>This is deprecated. The resource is configured to temporarily not be available for use in the protection/restoration scheme(s) it is part of.&#xD;
 This overrides all other control states including e.g. &quot;forced&quot;.&#xD;
 If the item is locked out then it cannot be used under any circumstances.&#xD;
 Note: Only relevant when part of a protection/restoration scheme.</body>

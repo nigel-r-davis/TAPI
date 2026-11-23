@@ -314,7 +314,7 @@ module tapi-notification {
             description "Text available for unspecified content.";
         }
         uses tapi-common:global-class;
-        description "The Notification signal.
+        description "This is deprecated. The Notification signal.
             OMG UML(R) Version 2.5.1: 'A Signal is a specification of a kind of communication between objects in which a reaction is asynchronously triggered in the receiver without a reply.
             The data carried by the communication are represented as attributes of the Signal.'";
     }

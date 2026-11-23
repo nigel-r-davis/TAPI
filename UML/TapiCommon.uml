@@ -475,7 +475,7 @@ Note that it is expected that attributes will be added to this structure to conv
         </ownedComment>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_p_JmsL6PEeWRz-VHgA3LJQ" name="ODU">
           <ownedComment xmi:type="uml:Comment" xmi:id="_R5yG4OysEee2fqmozVFruQ" annotatedElement="_p_JmsL6PEeWRz-VHgA3LJQ">
-            <body>Models the ODU layer as per ITU-T G.872</body>
+            <body>This is deprecated. Models the ODU layer as per ITU-T G.872</body>
           </ownedComment>
         </ownedLiteral>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_q7QpoL6PEeWRz-VHgA3LJQ" name="ETH">

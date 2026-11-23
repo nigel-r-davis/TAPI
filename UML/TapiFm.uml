@@ -95,7 +95,7 @@ License: This module is distributed under the Apache License 2.0</body>
     <packagedElement xmi:type="uml:Package" xmi:id="_U9bGUF5uEeuJ3Z2gpmm7nA" name="ObjectClasses">
       <packagedElement xmi:type="uml:Class" xmi:id="_5iu2UF5uEeuJ3Z2gpmm7nA" name="AlarmInfo">
         <ownedComment xmi:type="uml:Comment" xmi:id="_HIAo0I5JEeu0a8UFWJZNGg" annotatedElement="_5iu2UF5uEeuJ3Z2gpmm7nA">
-          <body>This class augments the Notification class with alarm related parameters.&#xD;
+          <body>This is deprecated.. This class augments the Notification class with alarm related parameters.&#xD;
 This class is deprecated in favor of DetectedCondition class, which unifies alarm and TCA related parameters.</body>
         </ownedComment>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_kT5ZsF5xEeuJ3Z2gpmm7nA" name="alarmName" isReadOnly="true">
@@ -160,7 +160,7 @@ For Connectivity Alarm Category in case that same CEP instance includes e.g. bot
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_gDSmQF8YEeuJ3Z2gpmm7nA" name="TcaInfo">
         <ownedComment xmi:type="uml:Comment" xmi:id="_Ck8GQI5JEeu0a8UFWJZNGg" annotatedElement="_gDSmQF8YEeuJ3Z2gpmm7nA">
-          <body>This class augments the Notification class with threshold crossing alert related parameters.&#xD;
+          <body>This is deprecated. This class augments the Notification class with threshold crossing alert related parameters.&#xD;
 This class is deprecated in favor of DetectedCondition class, which unifies alarm and TCA related parameters.</body>
         </ownedComment>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_w-12gF8aEeuJ3Z2gpmm7nA" name="thresholdIndicatorName" isReadOnly="true">
@@ -511,7 +511,7 @@ ITU-T G.7710: Failures may have been categorized to indicate the severity or urg
         </ownedLiteral>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_T1YKcINgEeuugLwCgMtsUg" name="CLEARED">
           <ownedComment xmi:type="uml:Comment" xmi:id="_T1YKcYNgEeuugLwCgMtsUg" annotatedElement="_T1YKcINgEeuugLwCgMtsUg">
-            <body>Included only for some possible backward compatibility purpose. It should not be used to assign a severity to a failure.&#xD;
+            <body>This is deprecated. Included only for some possible backward compatibility purpose. It should not be used to assign a severity to a failure.&#xD;
 ITU-T G.7710: The severities &quot;cleared&quot; and &quot;indeterminate&quot; defined by [ITU-T X.733] are not included in Table 2, as it is assumed that these are not to be used to assign a failure.</body>
           </ownedComment>
         </ownedLiteral>
@@ -538,7 +538,7 @@ ITU-T G.7710: The severities &quot;cleared&quot; and &quot;indeterminate&quot; d
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_tdYikINkEeuugLwCgMtsUg" name="PerceivedTcaSeverity">
         <ownedComment xmi:type="uml:Comment" xmi:id="_WAAAMINmEeuugLwCgMtsUg" annotatedElement="_tdYikINkEeuugLwCgMtsUg">
-          <body>The types of perceived severity of threshold crossing alerts.</body>
+          <body>This is deprecated. The types of perceived severity of threshold crossing alerts.</body>
         </ownedComment>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_aTnxgINmEeuugLwCgMtsUg" name="WARNING">
           <ownedComment xmi:type="uml:Comment" xmi:id="_aTnxgYNmEeuugLwCgMtsUg" annotatedElement="_aTnxgINmEeuugLwCgMtsUg">

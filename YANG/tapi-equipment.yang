@@ -883,7 +883,7 @@ module tapi-equipment {
         leaf geographical-location {
             type string;
             config false;
-            description "The location of the equipment in a georgraphical context (e.g., lat long).
+            description "This is deprecated. The location of the equipment in a georgraphical context (e.g., lat long).
                 This property is deprecated.
                 CONDITION: Mandatory where there is a relevant geographical location and formal geolocation is not being used (only for equipments not in holders).";
         }
