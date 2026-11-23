@@ -296,6 +296,7 @@ module tapi-topology {
         leaf node-uuid {
             type leafref {
                 path '/tapi-common:context/tapi-topology:topology-context/tapi-topology:topology/tapi-topology:node/tapi-topology:uuid';
+                require-instance false;
             }
             description "none";
         }
@@ -306,6 +307,7 @@ module tapi-topology {
         leaf node-edge-point-uuid {
             type leafref {
                 path '/tapi-common:context/tapi-topology:topology-context/tapi-topology:topology/tapi-topology:node/tapi-topology:owned-node-edge-point/tapi-topology:uuid';
+                require-instance false;
             }
             description "none";
         }
@@ -346,6 +348,17 @@ module tapi-topology {
             key 'topology-uuid node-uuid node-edge-point-uuid';
             config false;
             description "The NEPs connected by the Link.";
+        }
+        list alternative-view-of {
+            uses link-ref;
+            key 'topology-uuid link-uuid';
+            config false;
+            description "This link is an alternative view of the resources represented by the referenced link(s) where this alternative view is used for routing and control purposes.";
+        }
+        leaf view-allocation-strategy {
+            type view-allocation-strategy;
+            config false;
+            description "The allocation strategy for all resouces of the Link in the view.";
         }
         uses tapi-common:global-class;
         uses tapi-common:admin-state-pac;
@@ -407,6 +420,12 @@ module tapi-topology {
             config false;
             uses risk-parameter-pac;
             description "none";
+        }
+        list alternative-view-of {
+            uses node-ref;
+            key 'topology-uuid node-uuid';
+            config false;
+            description "This node is an alternative view of the resources represented by the referenced node(s) where this alternative view is used for routing and control purposes.";
         }
         uses tapi-common:global-class;
         uses tapi-common:admin-state-pac;
@@ -538,11 +557,40 @@ module tapi-topology {
             config false;
             description "none";
         }
+        list alternative-view-mapping
+		    uses alternative-view-mapping;
+            config false;
+            description "This NEP is an alternative view of resources represented by the referenced NEP(s) where the mapping of the resources is provided.";
+		}
         uses tapi-common:global-class;
         uses tapi-common:admin-state-pac;
         uses tapi-common:capacity-pac;
         description "The NodeEdgePoint (NEP) is a topological entity which represents the ingress-egress edge-port functions that access the forwarding capabilities provided by the Node.
             Hence it provides an encapsulation of addressing, mapping, termination, adaptation and OAM functions of one or more transport layers (including circuit and packet forms) performed at the entry and exit points of the Node.";
+    }
+    grouping alternative-view-mapping {
+        list cep-pair-mapping {
+            uses cep-pair-mapping;
+            config false;
+            description "Provides the mapping from one CEP instance opportunity in the view NEP to an instance opportunity in the referenced NEP.";
+        }
+		container alternative-view-of {
+            uses node-edge-point-ref;
+            config false;
+            description "This NEP is an alternative view of the resources represented by the referenced NEP(s) where this alternative view is used for routing and control purposes.";
+        }
+        description "The mappings for specific CEP instance opportunities from a referenced NEP available in the view.";
+    }
+    grouping cep-pair-mapping {
+        leaf view-cep-instance-opportunity {
+            type uint64;
+            description "The identifier for a specific CEP instance opportunity in the view NEP.";
+        }
+        leaf referenced-cep-instance-opportunity {
+            type uint64;
+            description "The identifier for a specific CEP instance opportunity in the referenced NEP.";
+        }
+        description "An instance mapping of CEP identifiers from a view of a referenced NEP to the referenced NEP.";
     }
     grouping risk-parameter-pac {
         list risk-characteristic {
@@ -934,6 +982,21 @@ module tapi-topology {
         base TOPOLOGY_PROFILE_TYPE;
         description "none";
     }
+    identity VIEW_ALLOCATION_STRATEGY {
+        description "none";
+    }
+    identity VIEW_ALLOCATION_STRATEGY_DEDICATED	{
+        base VIEW_ALLOCATION_STRATEGY;
+        description "The allocated resouces are provided for exclusive use in the view or a view of that view.";
+    }
+    identity VIEW_ALLOCATION_STRATEGY_SHARED	{
+        base VIEW_ALLOCATION_STRATEGY;
+        description "The allocated resouces are provided for use in the view but may be used in the source of the view.";
+    }
+    identity VIEW_ALLOCATION_STRATEGY_SHARED_PREEMTABLE	{
+        base VIEW_ALLOCATION_STRATEGY;
+        description "The allocated resouces are provided for use in the view but may be used in the source of the view and may be taken from this view even when used by the view.";
+    }
     grouping cost-characteristic {
         leaf cost-name {
             type string;
@@ -1125,6 +1188,12 @@ module tapi-topology {
             base PORT_ROLE_RULE_OPTION;
         }
         description "Indicates how to interpret the port role list.";
+    }
+    typedef view-allocation-strategy {
+        type identityref {
+            base VIEW_ALLOCATION_STRATEGY;
+        }
+        description "The strategy for allocation of resources to the view.";
     }
     grouping connection-spec-reference {
         leaf connection-spec-name {

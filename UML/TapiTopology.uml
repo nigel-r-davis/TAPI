@@ -478,6 +478,33 @@ License: This module is distributed under the Apache License 2.0</body>
       <ownedComment xmi:type="uml:Comment" xmi:id="_n6RAIMJPEe2L9rDrMN-6RQ">
         <body>The &quot;rule&quot; profile to be developed</body>
       </ownedComment>
+      <packagedElement xmi:type="uml:Association" xmi:id="_YSr_wKt0EfGIB9RxyZyQSw" name="NodeIsNodeInAlternativeView" memberEnd="_YVe1Eqt0EfGIB9RxyZyQSw _YVmJ0Kt0EfGIB9RxyZyQSw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YVe1EKt0EfGIB9RxyZyQSw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YVe1Eat0EfGIB9RxyZyQSw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_YVmJ0Kt0EfGIB9RxyZyQSw" name="node" type="_xImb0OK4EeSq5fATALSQkQ" association="_YSr_wKt0EfGIB9RxyZyQSw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9y5RwKt0EfGIB9RxyZyQSw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_91q48Kt0EfGIB9RxyZyQSw" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ZEDLQKt0EfGIB9RxyZyQSw" name="LinkIsLinkInAlternativeView" memberEnd="_ZEFngqt0EfGIB9RxyZyQSw _ZEMVMat0EfGIB9RxyZyQSw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ZEFngKt0EfGIB9RxyZyQSw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ZEFngat0EfGIB9RxyZyQSw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_ZEMVMat0EfGIB9RxyZyQSw" name="link" type="_37fFQOMCEeSdZOEXoN8VDQ" association="_ZEDLQKt0EfGIB9RxyZyQSw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JHt08Kt1EfGIB9RxyZyQSw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JIG2gKt1EfGIB9RxyZyQSw" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ZuPXwKt0EfGIB9RxyZyQSw" name="NodeEdgePointIsNodeEdgePointInAlternativeView" memberEnd="_ZuR0Aat0EfGIB9RxyZyQSw _Zu4Q8Kt0EfGIB9RxyZyQSw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ZuRM8Kt0EfGIB9RxyZyQSw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ZuR0AKt0EfGIB9RxyZyQSw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Zu4Q8Kt0EfGIB9RxyZyQSw" name="nodeedgepoint" type="_i1UzkD-3EeWNAdBR30aJhw" association="_ZuPXwKt0EfGIB9RxyZyQSw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jkJ3gKt1EfGIB9RxyZyQSw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jkWr0Kt1EfGIB9RxyZyQSw" value="*"/>
+        </ownedEnd>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_QOoHAC5xEea0_JngOlSKcA" name="Imports">
       <packageImport xmi:type="uml:PackageImport" xmi:id="_LArf4DA8Eea4fKwSGMr6CA">
@@ -583,6 +610,18 @@ License: This module is distributed under the Apache License 2.0</body>
           </ownedComment>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D7BNQP4rEea_VPdGG2-szQ"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_D7ThIP4rEea_VPdGG2-szQ" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ZEFngqt0EfGIB9RxyZyQSw" name="_alternativeViewOf" type="_37fFQOMCEeSdZOEXoN8VDQ" association="_ZEDLQKt0EfGIB9RxyZyQSw">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_HxO5ALDtEfGhKeh7jgAc9A" annotatedElement="_ZEFngqt0EfGIB9RxyZyQSw">
+            <body>This link is an alternative view of the resources represented by the referenced link(s) where this alternative view is used for routing and control purposes.</body>
+          </ownedComment>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZELuIKt0EfGIB9RxyZyQSw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZEMVMKt0EfGIB9RxyZyQSw" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_drhD0NehEfGTddX1SlRoUQ" name="viewAllocationStrategy" visibility="public" type="_iZttwNegEfGTddX1SlRoUQ" isReadOnly="true">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_pEXycNehEfGTddX1SlRoUQ" annotatedElement="_drhD0NehEfGTddX1SlRoUQ">
+            <body>The allocation strategy for all resouces of the Link in the view.</body>
+          </ownedComment>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_xImb0OK4EeSq5fATALSQkQ" name="Node" isLeaf="true">
@@ -690,6 +729,13 @@ In other words, each and every NEP instance is owned by a Node at the lowest par
           </ownedComment>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nXhHQSSBEe2jnszdZXgCEQ"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nXhHQiSBEe2jnszdZXgCEQ" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_YVe1Eqt0EfGIB9RxyZyQSw" name="_alternativeViewOf" type="_xImb0OK4EeSq5fATALSQkQ" isReadOnly="true" association="_YSr_wKt0EfGIB9RxyZyQSw">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_AP0ygLDsEfGhKeh7jgAc9A" annotatedElement="_YVe1Eqt0EfGIB9RxyZyQSw">
+            <body>This node is an alternative view of the resources represented by the referenced node(s) where this alternative view is used for routing and control purposes.</body>
+          </ownedComment>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YVliwKt0EfGIB9RxyZyQSw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YVliwat0EfGIB9RxyZyQSw" value="*"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_ejyEgOKyEeSq5fATALSQkQ" name="Topology" isLeaf="true">
@@ -859,6 +905,13 @@ NEP mapped to more than one SIP (slicing/virtualizing) or a SIP mapped to more t
           <type xmi:type="uml:Class" href="TapiCommon.uml#_zLUKMGZ7EeyYs8rKMN_xPQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UPiwoXIjEeyQOcpW7WQJ8A"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UPjXsHIjEeyQOcpW7WQJ8A" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ZuR0Aat0EfGIB9RxyZyQSw" name="alternativeViewMapping" type="_KKwMMNecEfGTddX1SlRoUQ" isReadOnly="true" association="_ZuPXwKt0EfGIB9RxyZyQSw">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_XsYZALDrEfGhKeh7jgAc9A" annotatedElement="_ZuR0Aat0EfGIB9RxyZyQSw">
+            <body>This NEP is an alternative view of resources represented by the referenced NEP(s) where the mapping of the resources is provided.</body>
+          </ownedComment>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZunyQKt0EfGIB9RxyZyQSw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZuwVIKt0EfGIB9RxyZyQSw" value="*"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_KjZW99yKEeWXdJnxZxtFYA" name="RiskParameterPac" visibility="public">
@@ -1800,6 +1853,61 @@ This can be used as a reference to a paper document where full formal machine in
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_hzkyEJaGEe2UJu5GXGEEwQ" name="TopologyProfileType">
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_rhzx8JaGEe2UJu5GXGEEwQ" name="TRANSMISSION_CAPABILITY"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_vRL-MNeaEfGTddX1SlRoUQ" name="CepPairMapping">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_-kAA8NeaEfGTddX1SlRoUQ" annotatedElement="_vRL-MNeaEfGTddX1SlRoUQ">
+          <body>An instance mapping of CEP identifiers from a view of a referenced NEP to the referenced NEP.</body>
+        </ownedComment>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_AJuBkNebEfGTddX1SlRoUQ" name="viewCepInstanceOpportunity" visibility="public" isReadOnly="true">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_iutfoNebEfGTddX1SlRoUQ" annotatedElement="_AJuBkNebEfGTddX1SlRoUQ">
+            <body>The identifier for a specific CEP instance opportunity in the view NEP.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_HYFFsNebEfGTddX1SlRoUQ" name="referencedCepInstanceOpportunity" visibility="public" isReadOnly="true">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_X6DDMNebEfGTddX1SlRoUQ" annotatedElement="_HYFFsNebEfGTddX1SlRoUQ">
+            <body>The identifier for a specific CEP instance opportunity in the referenced NEP.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_KKwMMNecEfGTddX1SlRoUQ" name="AlternativeViewMapping">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_a1-MUNecEfGTddX1SlRoUQ" annotatedElement="_KKwMMNecEfGTddX1SlRoUQ">
+          <body>The mappings for specific CEP instance opportunities from a referenced NEP available in the view.</body>
+        </ownedComment>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_cUA3oNecEfGTddX1SlRoUQ" name="cepPairMapping" visibility="public" type="_vRL-MNeaEfGTddX1SlRoUQ" isReadOnly="true">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_nSjo0NecEfGTddX1SlRoUQ" annotatedElement="_cUA3oNecEfGTddX1SlRoUQ">
+            <body>Provides the mapping from one CEP instance opportunity in the view NEP to an instance opportunity in the referenced NEP.</body>
+          </ownedComment>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qVIpANecEfGTddX1SlRoUQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qVqNcNecEfGTddX1SlRoUQ" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_3c37UNecEfGTddX1SlRoUQ" name="_alternativeViewOf" type="_i1UzkD-3EeWNAdBR30aJhw">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_3c37UdecEfGTddX1SlRoUQ" annotatedElement="_3c37UNecEfGTddX1SlRoUQ">
+            <body>This NEP is an alternative view of the resources represented by the referenced NEP(s) where this alternative view is used for routing and control purposes.</body>
+          </ownedComment>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3c37UtecEfGTddX1SlRoUQ"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_iZttwNegEfGTddX1SlRoUQ" name="ViewAllocationStrategy">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_T1Ct8NehEfGTddX1SlRoUQ" annotatedElement="_iZttwNegEfGTddX1SlRoUQ">
+          <body>The strategy for allocation of resources to the view.</body>
+        </ownedComment>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_p7sRcNegEfGTddX1SlRoUQ" name="DEDICATED">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_C3SMUNehEfGTddX1SlRoUQ" annotatedElement="_p7sRcNegEfGTddX1SlRoUQ">
+            <body>The allocated resouces are provided for exclusive use in the view or a view of that view.</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_t93tcNegEfGTddX1SlRoUQ" name="SHARED">
+          <ownedComment xmi:type="uml:Comment" xmi:id="__VuKENegEfGTddX1SlRoUQ" annotatedElement="_t93tcNegEfGTddX1SlRoUQ">
+            <body>The allocated resouces are provided for use in the view but may be used in the source of the view.</body>
+          </ownedComment>
+        </ownedLiteral>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_wykCoNegEfGTddX1SlRoUQ" name="SHARED_PREEMPTABLE">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_7nSJcNegEfGTddX1SlRoUQ" annotatedElement="_wykCoNegEfGTddX1SlRoUQ">
+            <body>The allocated resouces are provided for use in the view but may be used in the source of the view and may be taken from this view even when used by the view.</body>
+          </ownedComment>
+        </ownedLiteral>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_tl7NYMGLEeaALJQAf08uAg" name="Rules">
       <ownedRule xmi:type="uml:Constraint" xmi:id="_BVQ7QMGLEeaALJQAf08uAg" name="XOR: TopologyContainment" constrainedElement="_v4NNUETtEead1bezhJG4aw _T7gvkD_LEeWNAdBR30aJhw">
@@ -2327,4 +2435,26 @@ This can be used as a reference to a paper document where full formal machine in
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_zzuHUErjEe2yGsF8121Sxw" base_Property="_zztgQkrjEe2yGsF8121Sxw"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_zzuHUUrjEe2yGsF8121Sxw" base_StructuralFeature="_zztgQkrjEe2yGsF8121Sxw"/>
   <OpenModel_Profile:StrictComposite xmi:id="_VIbCMErkEe2yGsF8121Sxw" base_Association="_zzUesErjEe2yGsF8121Sxw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_YVfcIKt0EfGIB9RxyZyQSw" base_StructuralFeature="_YVe1Eqt0EfGIB9RxyZyQSw"/>
+  <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_YVk7sKt0EfGIB9RxyZyQSw" base_Property="_YVe1Eqt0EfGIB9RxyZyQSw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_YVmJ0at0EfGIB9RxyZyQSw" base_StructuralFeature="_YVmJ0Kt0EfGIB9RxyZyQSw"/>
+  <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_YVmJ0qt0EfGIB9RxyZyQSw" base_Property="_YVmJ0Kt0EfGIB9RxyZyQSw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ZEG1oKt0EfGIB9RxyZyQSw" base_StructuralFeature="_ZEFngqt0EfGIB9RxyZyQSw"/>
+  <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_ZELHEKt0EfGIB9RxyZyQSw" base_Property="_ZEFngqt0EfGIB9RxyZyQSw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ZEMVMqt0EfGIB9RxyZyQSw" base_StructuralFeature="_ZEMVMat0EfGIB9RxyZyQSw"/>
+  <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_ZEM8QKt0EfGIB9RxyZyQSw" base_Property="_ZEMVMat0EfGIB9RxyZyQSw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_ZuSbEKt0EfGIB9RxyZyQSw" base_StructuralFeature="_ZuR0Aat0EfGIB9RxyZyQSw"/>
+  <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_ZuXTkKt0EfGIB9RxyZyQSw" base_Property="_ZuR0Aat0EfGIB9RxyZyQSw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Zu4Q8at0EfGIB9RxyZyQSw" base_StructuralFeature="_Zu4Q8Kt0EfGIB9RxyZyQSw"/>
+  <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_Zu44AKt0EfGIB9RxyZyQSw" base_Property="_Zu4Q8Kt0EfGIB9RxyZyQSw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_AJuooNebEfGTddX1SlRoUQ" base_StructuralFeature="_AJuBkNebEfGTddX1SlRoUQ"/>
+  <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_AJ_HUNebEfGTddX1SlRoUQ" base_Property="_AJuBkNebEfGTddX1SlRoUQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_HYFswNebEfGTddX1SlRoUQ" base_StructuralFeature="_HYFFsNebEfGTddX1SlRoUQ"/>
+  <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_HYTIINebEfGTddX1SlRoUQ" base_Property="_HYFFsNebEfGTddX1SlRoUQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_cUA3odecEfGTddX1SlRoUQ" base_StructuralFeature="_cUA3oNecEfGTddX1SlRoUQ"/>
+  <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_cUQIMNecEfGTddX1SlRoUQ" base_Property="_cUA3oNecEfGTddX1SlRoUQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_3c4iYNecEfGTddX1SlRoUQ" base_StructuralFeature="_3c37UNecEfGTddX1SlRoUQ"/>
+  <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_3dEvoNecEfGTddX1SlRoUQ" base_Property="_3c37UNecEfGTddX1SlRoUQ"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_drhq4NehEfGTddX1SlRoUQ" base_StructuralFeature="_drhD0NehEfGTddX1SlRoUQ"/>
+  <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_dr4QMNehEfGTddX1SlRoUQ" base_Property="_drhD0NehEfGTddX1SlRoUQ"/>
 </xmi:XMI>
