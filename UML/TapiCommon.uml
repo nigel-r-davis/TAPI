@@ -130,6 +130,15 @@ ETH_CRC_ERRORS_OUTPUT&#xD;
 ETH_BLOCK_ERRORS_OUTPUT&#xD;
 </body>
       </ownedComment>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Ub3iYKt4EfGIB9RxyZyQSw" name="ServiceInterfacePointIsServiceInterfacePointInAlternativeView" memberEnd="_UeO54qt4EfGIB9RxyZyQSw _Ueq-wKt4EfGIB9RxyZyQSw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UeO54Kt4EfGIB9RxyZyQSw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UeO54at4EfGIB9RxyZyQSw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Ueq-wKt4EfGIB9RxyZyQSw" name="serviceinterfacepoint" type="_It0sYEG-EeWMO5szP8dKiA" association="_Ub3iYKt4EfGIB9RxyZyQSw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lTg08Kt4EfGIB9RxyZyQSw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lTtpQKt4EfGIB9RxyZyQSw" value="*"/>
+        </ownedEnd>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_ZA31MC5wEea0_JngOlSKcA" name="ObjectClasses">
       <packagedElement xmi:type="uml:Class" xmi:id="_j2GU0N78EeW-BtRsuJPbqg" name="AdminStatePac" isLeaf="true">
@@ -307,6 +316,13 @@ If direction attribute is missing the ServiceInterfacePoint (SIP) instance is to
         <ownedAttribute xmi:type="uml:Property" xmi:id="_d5GwQMVDEeyiW8qpLmKwtA" name="_sourceProfile" type="_zLUKMGZ7EeyYs8rKMN_xPQ" aggregation="shared" association="_d5E7EMVDEeyiW8qpLmKwtA">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d5IlccVDEeyiW8qpLmKwtA"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d5IlcsVDEeyiW8qpLmKwtA" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_UeO54qt4EfGIB9RxyZyQSw" name="_alternativeViewOf" type="_It0sYEG-EeWMO5szP8dKiA" isReadOnly="true" association="_Ub3iYKt4EfGIB9RxyZyQSw">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_-oq8kLDtEfGhKeh7jgAc9A" annotatedElement="_UeO54qt4EfGIB9RxyZyQSw">
+            <body>This SIP is an alternative view of the resources represented by the referenced SIP(s) where this alternative view is used for routing and control purposes.</body>
+          </ownedComment>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UebHIKt4EfGIB9RxyZyQSw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UejqAKt4EfGIB9RxyZyQSw" value="*"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_KjZXM9yKEeWXdJnxZxtFYA" name="CapacityPac">
@@ -1851,4 +1867,8 @@ Frame delay variation is a measure of the variations in the frame delay between 
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_rIbNIEkOEe-7QtUp47wh_A" base_Property="_rIMjoEkOEe-7QtUp47wh_A"/>
   <OpenModel_Profile:OpenModelAttribute xmi:id="_rIdpYEkOEe-7QtUp47wh_A" base_StructuralFeature="_rIdCUEkOEe-7QtUp47wh_A"/>
   <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_rIdpYUkOEe-7QtUp47wh_A" base_Property="_rIdCUEkOEe-7QtUp47wh_A"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_UePg8Kt4EfGIB9RxyZyQSw" base_StructuralFeature="_UeO54qt4EfGIB9RxyZyQSw"/>
+  <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_UeSkQKt4EfGIB9RxyZyQSw" base_Property="_UeO54qt4EfGIB9RxyZyQSw"/>
+  <OpenModel_Profile:OpenModelAttribute xmi:id="_Uerl0Kt4EfGIB9RxyZyQSw" base_StructuralFeature="_Ueq-wKt4EfGIB9RxyZyQSw"/>
+  <OpenInterfaceModel_Profile:OpenInterfaceModelAttribute xmi:id="_Uerl0at4EfGIB9RxyZyQSw" base_Property="_Ueq-wKt4EfGIB9RxyZyQSw"/>
 </xmi:XMI>

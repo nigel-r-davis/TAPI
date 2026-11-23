@@ -75,6 +75,7 @@ module tapi-common {
         leaf service-interface-point-uuid {
             type leafref {
                 path '/tapi-common:context/tapi-common:service-interface-point/tapi-common:uuid';
+                require-instance false;
             }
             description "none";
         }
@@ -84,6 +85,7 @@ module tapi-common {
         leaf profile-uuid {
             type leafref {
                 path '/tapi-common:context/tapi-common:profile/tapi-common:uuid';
+                require-instance false;
             }
             description "none";
         }
@@ -235,6 +237,12 @@ module tapi-common {
             key 'profile-uuid';
             config false;
             description "none";
+        }
+        list alternative-view-of {
+            uses service-interface-point-ref;
+            key 'service-interface-point-uuid';
+            config false;
+            description "This SIP is an alternative view of the resources represented by the referenced SIP(s) where this alternative view is used for routing and control purposes.";
         }
         uses global-class;
         uses admin-state-pac;
